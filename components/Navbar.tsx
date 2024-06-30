@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header className="py-4">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <nav>
           <ul className="flex gap-3">
             <li className="hover:underline text-gray-700">

@@ -1,12 +1,12 @@
 import PostCard from "@/components/PostCard";
-import { getAllPost } from "@/lib/post";
+import { getAllPost, getPost } from "@/lib/post";
+import { Metadata } from "next";
 
 export default async function Blog() {
   const posts = await getAllPost();
-  console.log(posts);
   return (
     <section>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         {posts?.map((post) => (
           <PostCard
             title={post.title}

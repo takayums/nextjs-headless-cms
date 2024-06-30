@@ -1,11 +1,10 @@
 import PostCard from "@/components/PostCard";
-import Image from "next/image";
-import Link from "next/link";
+import { Metadata } from "next";
 
 export default function Page() {
   return (
     <section>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <PostCard
           title="Blog 1"
           author="Admin"
